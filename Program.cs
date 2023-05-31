@@ -8,6 +8,7 @@ namespace klassenarbeit
             double umsatzVorjahr;
             double umsatzAktuell;
             double umsatzentwicklung;
+            string neueEingabe;
             bool schleife = true;
 
             //Programmschleife
@@ -48,7 +49,8 @@ namespace klassenarbeit
 
                 //Abfrage für neue Werte oder beenden des Progamms
                 System.Console.WriteLine("Neue Eingabe? Drücke j");
-                if(!Console.ReadLine().ToLower().Equals("j")){
+                neueEingabe = Console.ReadLine().ToLower();
+                if(!neueEingabe.Equals("j")){
                     schleife = false;
                     System.Console.WriteLine("Programm wird beendet");
                 }
